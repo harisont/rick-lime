@@ -1,3 +1,19 @@
+forms:
+  - www_form
+
+slots:
+  who:
+    type: text
+  where:
+    type: text
+  how:
+    type: text
+
+entities:
+  - who
+  - where
+  - how
+
 intents:
   - greet
   - goodbye
@@ -9,6 +25,11 @@ intents:
   - accept_challenge
   - like
   - dislike
+  - give_info:
+      use_entities: []
+  - inform_who
+  - inform_where
+  - inform_how
 
 responses:
   utter_greet:
@@ -81,6 +102,24 @@ responses:
             He was ready to faint,
             That unhappy Old Man in a boat.
               - Edward Lear
+
+  utter_ask_who:
+  - text: |
+            I'd like no know who the character is,
+            if it's a boy, a cat or a Miss
+
+  utter_ask_where:
+  - text: |
+            Where does the action takes place this round?
+            Enter a region, country or town
+
+  utter_ask_how:
+  - text: |
+            For today's subject give me an adjective:
+            anything works, you can be creative!
+
+  utter_firstverse:
+  - "There was a {how} {who} of {where}... [TEST]"
 
 session_config:
   session_expiration_time: 60

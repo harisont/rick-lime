@@ -1,27 +1,26 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/core/actions/#custom-actions/
+from typing import Any, List, Text, Dict
 
+from rasa_sdk import Tracker
+from rasa_sdk.forms import FormAction
+from rasa_sdk.executor import CollectingDispatcher
 
-# This is a simple example for a custom action which utters "Hello World!"
+class WwwForm(FormAction):
 
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
+    def name(self):
+        return "www_form"
+
+    @staticmethod
+    def required_slots(tracker: Tracker) -> List[Text]:
+        return ["who", "where", "how"]
+
+    def slot_mappings(self) -> Dict[Text, Any]:
+        return {"who": self.from_entity(entity="who", intent=["give_info", "inform_who"]),
+                "where": self.from_entity(entity="where", intent=["give_info", "inform_where"]),
+                "how": self.from_entity(entity="how", intent=["give_info", "inform_where"])}
+
+    def submit(self,
+               dispatcher: CollectingDispatcher,
+               tracker: Tracker,
+               domain: Dict[Text, Any]) -> List[Dict]:
+        dispatcher.utter_message(template="utter_firstverse")
+        return []
