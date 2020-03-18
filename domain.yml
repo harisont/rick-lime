@@ -6,6 +6,7 @@ intents:
   - ask_name
   - ask_intro
   - ask_example
+  - accept_challenge
 
 responses:
   utter_greet:
@@ -38,6 +39,11 @@ responses:
             So seldom are clean
             And the clean ones so seldom are comical.
               - Anonymous
+
+  utter_about:
+  - text: |
+            What do you want it to be about?
+            I need a who, a where and a how!
 
 session_config:
   session_expiration_time: 60

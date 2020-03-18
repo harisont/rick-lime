@@ -18,7 +18,9 @@
 - indeed
 - of course
 - that sounds good
-- correct
+- okay
+- why not?
+- let's do that!
 
 ## intent:deny
 - no
@@ -44,3 +46,15 @@
 - can you give me an example?
 - show me an example
 - any example?
+
+## intent:accept_challenge
+- why not?
+- let's try
+- let's start!
+- let's write one!
+- okay. Let's write a limerick
+- let's write a limerick
+- I'd like you to help me write a limerick
+- I want to write a limerick
+- let's start writing
+- can you help me write a limerick?
