@@ -3,13 +3,41 @@ intents:
   - goodbye
   - affirm
   - deny
+  - ask_name
+  - ask_intro
+  - ask_example
 
 responses:
   utter_greet:
-  - text: "Hi! Shall we write a limerick together?"
+  - text: |
+            Hi! How's it going? I was wondering whether
+            or not we shall write a limerick together
 
   utter_goodbye:
   - text: "Bye"
+
+  utter_introduce_rick:
+  - text: |
+            I'm Richard Lime, but you can call me Rick!
+            I can help you write poems in a way nice and quick.
+            I have a knack for weird, nonsense verse
+            and with a limerick we can rehearse!
+
+  utter_intro:
+  - text: |
+            A limerick is a nonsense composition
+            belonging to the English tradition.
+            It lasts five lines (AABBA)
+            and we can write one if you think that's okay
+
+  utter_example:
+  - text: |
+            The limerick packs laughs anatomical
+            Into space that is quite economical.
+            But the good ones I've seen
+            So seldom are clean
+            And the clean ones so seldom are comical.
+              - Anonymous
 
 session_config:
   session_expiration_time: 60
