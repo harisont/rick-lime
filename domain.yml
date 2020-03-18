@@ -7,29 +7,33 @@ intents:
   - ask_intro
   - ask_example
   - accept_challenge
+  - like
+  - dislike
 
 responses:
   utter_greet:
   - text: |
             Hi! How's it going? I was wondering whether
-            or not we shall write a limerick together
+            Or not we shall write a limerick together
 
   utter_goodbye:
-  - text: "Bye"
+  - text: |
+            Well then, goodbye, I'll now disappear
+            but when you need me I'm always here
 
   utter_introduce_rick:
   - text: |
-            I'm Richard Lime, but you can call me Rick!
+            I'm Richard Lime, but you can call me Rick.
             I can help you write poems in a way nice and quick.
             I have a knack for weird, nonsense verse
-            and with a limerick we can rehearse!
+            And with a limerick we can rehearse!
 
   utter_intro:
   - text: |
             A limerick is a nonsense composition
-            belonging to the English tradition.
+            Belonging to the English tradition.
             It lasts five lines (AABBA)
-            and we can write one if you think that's okay
+            And we can write one if you think that's okay
 
   utter_example:
   - text: |
@@ -44,6 +48,39 @@ responses:
   - text: |
             What do you want it to be about?
             I need a who, a where and a how!
+
+  utter_was_it_good:
+  - text: |
+            How did you like it? I think it's not bad.
+            Don't worry, if you hate it I won't be sad.
+
+  utter_could_be_worse:
+  - text: |
+            Maybe it's because I'm a little bit hoarse
+            But do believe me: it could have been worse!
+
+  utter_glad_you_enjoyed:
+  - text: |
+            I'm glad you like it. Would you like to hear
+            One written by the founder Edward Lear?
+
+  utter_bad_example:
+  - text: |
+            There was a young man from Japan
+            Whose limericks never would scan.
+            And when they asked why,
+            He said "I do try!
+            But when I get to the last line I try to fit in as many words as I can.
+              - Anonymous
+
+  utter_lear_example:
+  - text: |
+            There was an Old Man in a boat,
+            Who said, 'I'm afloat, I'm afloat!'
+            When they said, 'No! you ain't!'
+            He was ready to faint,
+            That unhappy Old Man in a boat.
+              - Edward Lear
 
 session_config:
   session_expiration_time: 60

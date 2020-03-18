@@ -46,6 +46,8 @@
 - can you give me an example?
 - show me an example
 - any example?
+- like what?
+- show me
 
 ## intent:accept_challenge
 - why not?
@@ -58,3 +60,21 @@
 - I want to write a limerick
 - let's start writing
 - can you help me write a limerick?
+
+## intent:like
+- that was great
+- amazing!
+- it was so good!
+- well done
+- loved it
+- good job
+- I really liked it
+
+## intent:dislike
+- I hate it
+- never heard a poem so bad
+- it is horrible
+- didn't like it
+- that's so bad!
+- sorry but I did not like it
+- you call it a poem?!
