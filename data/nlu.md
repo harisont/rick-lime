@@ -78,3 +78,55 @@
 - that's so bad!
 - sorry but I did not like it
 - you call it a poem?!
+
+## intent:give_info
+- no idea
+- I dunno
+- I have no clue
+- what do you want to know?
+- what information do you need exactly?
+- let's write a poem about a [strong](how) [guy](who) of [Naples](where)
+- I wanna write about a [programmer](who) from [Sweden](where) who is [lazy](how)
+- I'd like to write about [Helen](who) of [Troy](where)
+- we'll write about a [spider] from [Mars]
+- let's write a limerick about a [boring](how) [pastor](who)
+- can we write something about a [sleepy](how) [student](who)?
+- let's write about a [lady](who)
+- we could write about [Juliet](who)
+- about a [hoarse](how) [actor](who) of [Nice](where)
+
+## intent:inform_who
+- [scholar](who)
+- [Lisa](who)
+- [horse](who)
+- the character is an [owl](who)
+- the protagonist's name is [Lars](who)
+- the main character is called [Emily](who)
+- the poem will be about a [journalist](who)
+- it's an [acrobat](who)
+- it is a [bird](who)
+- she is a [girl](who)
+- he is an [skater](who)
+
+## intent:inform_where
+- [London](where)
+- [Iran](where)
+- [Cannes](where)
+- she comes from [Paris](where)
+- he's from [Peru](where)
+- he lives in [Bologna](where)
+- in [Latvia](where)
+- in [Capri](where)
+- it takes place in [Chile](where)
+- happens in [China](where)
+
+## intent:inform_how
+- [bad](how)
+- [obscure](how)
+- [childish](how)
+- he is [silly](how)
+- she is [dirty](how)
+- it is [weird](how)
+- he's [nasty](how)
+- the character is [loud](how)
+- the subject is [short](how)

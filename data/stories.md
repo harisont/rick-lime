@@ -22,17 +22,49 @@
 
 ## start writing basic
 * accept_challenge
-  - utter_about <!-- will be a slot -->
+  - utter_about
 
 ## start writing after greetings
   - utter_greet
 * affirm
-  - utter_about <!-- will be a slot -->
+  - utter_about
 
 ## start writing after intro
   - utter_intro
 * affirm
-  - utter_about <!-- will be a slot -->
+  - utter_about
+
+## form filling 0 (none)
+  - utter_about
+* give_info
+  - www_form
+
+## form filling 1 (all)
+  - utter_about
+* give_info{"who": "wizard", "where": "York", "how": "old"}
+  - www_form
+
+## form filling 2 (who-where)
+  - utter_about
+* give_info{"who": "teacher", "where": "Chalmers"}
+  - www_form
+
+## form filling 3 (who-how)
+  - utter_about
+* give_info{"who": "sailor", "how": "nostalgic"}
+  - www_form
+
+## form filling 4 (who)
+  - utter_about
+* give_info{"who": "Robert"}
+  - www_form
+
+<!-- more combinations to come -->
+
+## www_form path
+  - www_form
+  - form{"name": "www_form"}
+  - form{"name": null}
 
 ## good
   - utter_was_it_good
@@ -47,7 +79,7 @@
 ## Lear example
   - utter_glad_you_enjoyed
 * affirm
-  - utter_lear_example <!--replace with custom action-->
+  - utter_lear_example <!--replace with custom action (random example)-->
 
 ## Lear example
   - utter_glad_you_enjoyed
