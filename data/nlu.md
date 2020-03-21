@@ -130,3 +130,14 @@
 - he's [nasty](how)
 - the character is [loud](how)
 - the subject is [short](how)
+
+## intent:tell_second_verse
+- [whose favorite color was blue](verse2)
+- [whose vectors were not enough sparse](verse2)
+- [whose smiles would show too much joy](verse2)
+- [who never could go for a run](verse2)
+- [who everyone else would embarrass](verse2)
+- [who had twenty boxes of staples](verse2)
+- [that only ate carne con chili](verse2)
+- [that everyone thought was a man](verse2)
+- [that wanted to go back to Eden](verse2)

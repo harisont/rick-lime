@@ -1,8 +1,14 @@
 from typing import Any, List, Text, Dict
+import datamuse
 
-from rasa_sdk import Tracker
+from rasa_sdk import Tracker, Action
 from rasa_sdk.forms import FormAction
 from rasa_sdk.executor import CollectingDispatcher
+
+def get_rhymes(word):
+    api = datamuse.Datamuse()
+    response = api.words(rel_rhy=word, max=5)
+    return list(map(lambda dict: dict["word"], response))
 
 class WwwForm(FormAction):
 
@@ -22,5 +28,7 @@ class WwwForm(FormAction):
                dispatcher: CollectingDispatcher,
                tracker: Tracker,
                domain: Dict[Text, Any]) -> List[Dict]:
-        dispatcher.utter_message(template="utter_firstverse")
+        dispatcher.utter_message(template="utter_prompt_verse2")
+        rhyme_with = tracker.current_slot_values()["where"]
+        dispatcher.utter_message(text=", ".join(get_rhymes(rhyme_with))) # TODO: handle empty list
         return []

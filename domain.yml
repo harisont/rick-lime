@@ -1,6 +1,9 @@
 forms:
   - www_form
 
+actions:
+  - action_suggest_rhymes
+
 slots:
   who:
     type: text
@@ -8,11 +11,14 @@ slots:
     type: text
   how:
     type: text
+  verse2:
+    type: text
 
 entities:
   - who
   - where
   - how
+  - verse2
 
 intents:
   - greet
@@ -30,6 +36,7 @@ intents:
   - inform_who
   - inform_where
   - inform_how
+  - tell_second_verse
 
 responses:
   utter_greet:
@@ -116,10 +123,14 @@ responses:
   utter_ask_how:
   - text: |
             For today's subject give me an adjective:
-            anything works, you can be creative!
+            Anything works, you can be creative!
 
-  utter_firstverse:
-  - "There was a {how} {who} of {where}... [TEST]"
+  utter_prompt_verse2:
+  - text: |
+            About the {who} I want to know more:
+            Writing the second verse is your chore.
+            To rhyme with {where} don't you forget!
+            And if in trouble, read what I suggest:
 
 session_config:
   session_expiration_time: 60
