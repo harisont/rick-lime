@@ -37,36 +37,45 @@
   - utter_about
 * give_info
   - www_form
+  - slot{"who": "bird"}
+  - slot{"where": "Paris"}
+  - slot{"how": "singing"}
+  - form{"name": "www_form"}
+  - form{"name": null}
 
 ## form filling 1 (all)
   - utter_about
 * give_info{"who": "wizard", "where": "York", "how": "old"}
   - www_form
+  - form{"name": "www_form"}
+  - form{"name": null}
 
 ## form filling 2 (who-where)
   - utter_about
 * give_info{"who": "teacher", "where": "Chalmers"}
   - www_form
+  - slot{"how": "mad"}
+  - form{"name": "www_form"}
+  - form{"name": null}
 
 ## form filling 3 (who-how)
   - utter_about
 * give_info{"who": "sailor", "how": "nostalgic"}
   - www_form
+  - slot{"where": "Porto"}
+  - form{"name": "www_form"}
+  - form{"name": null}
 
 ## form filling 4 (who)
   - utter_about
-* give_info{"who": "Robert"}
+* give_info{"who": "thief"}
   - www_form
-
-<!-- more combinations to come -->
-
-## www_form path
-  - www_form
-  - slot{"who": "bird"}
-  - slot{"where": "Paris"}
-  - slot{"how": "hoarse"}
+  - slot{"how": "sloppy"}
+  - slot{"where": "Lisbon"}
   - form{"name": "www_form"}
   - form{"name": null}
+
+<!-- more combinations to come -->
 
 ## central verses to end
   - form{"name": null}
