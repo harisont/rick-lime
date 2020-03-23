@@ -97,7 +97,6 @@
 
 ## intent:inform_who
 - [scholar](who)
-- [Lisa](who)
 - [horse](who)
 - the character is an [owl](who)
 - the protagonist's name is [Lars](who)
@@ -124,6 +123,8 @@
 - [bad](how)
 - [obscure](how)
 - [childish](how)
+- [lovely](how)
+- [sad](how)
 - he is [silly](how)
 - she is [dirty](how)
 - it is [weird](how)
@@ -143,7 +144,17 @@
 - [that wanted to go back to Eden](verse2)
 
 ## intent: tell_verse3
-- [for when songs he chirped](verse3)
+- [for when songs it chirped](verse3)
+- [for he thought it was fun](verse3)
+- [cause he was well aware](verse3)
+- [cause she newer wore skirts](verse3)
+- [as the city was locked](verse3)
+- [as she thought it was fair](verse3)
 
 ## intent: tell_verse4
-- [he wasn't too skilled](verse4)
+- [it wasn't too skilled](verse4)
+- [to dress as a nun](verse4)
+- [of how people would stare](verse4)
+- [but a tie and a shirt](verse4)
+- [and food he had stocked](verse4)
+- [to steal food from a fair](verse4)
