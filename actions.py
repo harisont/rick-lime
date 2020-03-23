@@ -4,6 +4,9 @@ import datamuse
 from rasa_sdk import Tracker, Action
 from rasa_sdk.forms import FormAction
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
+
+central_verses = []
 
 def get_rhymes(word):
     '''
@@ -54,7 +57,36 @@ class ActionSuggestRhymes(Action):
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        rhyme_with = tracker.current_slot_values()["verse3"].split()[-1]
+        rhyme_with = central_verses[-1].split()[-1]
         dispatcher.utter_message(text=format_rhymes(get_rhymes(rhyme_with)))
         dispatcher.utter_message(template="utter_prompt_verse4")
         return []
+
+class ActionAddVerse(Action):
+
+    def name(self) -> Text:
+        return "action_add_verse"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        verse = tracker.events[-1].get('text')
+        central_verses.append(verse)
+        print(central_verses)
+        return []
+
+class ActionSetVerses(Action):
+
+    def name(self) -> Text:
+        return "action_set_verses"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        if len(central_verses) == 3:
+            return [SlotSet("verse2", central_verses[0]), SlotSet("verse3", central_verses[1]), SlotSet("verse4", central_verses[2])]
+        else:
+            print("This should never happen. We rushed to conclusions before the user gave us all of the necessary information.")
+            return []

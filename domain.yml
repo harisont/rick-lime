@@ -3,6 +3,8 @@ forms:
 
 actions:
   - action_suggest_rhymes
+  - action_add_verse
+  - action_set_verses
 
 slots:
   who:
@@ -43,8 +45,7 @@ intents:
   - inform_where
   - inform_how
   - tell_verse2
-  - tell_verse3:
-      triggers: action_suggest_rhymes
+  - tell_verse3
   - tell_verse4
 
 responses:

@@ -133,28 +133,28 @@
 - the subject is [short](how)
 
 ## intent:tell_verse2
-- [whose favorite color was blue](verse2)
-- [whose vectors were not enough sparse](verse2)
-- [whose smiles would show too much joy](verse2)
-- [who never could go for a run](verse2)
-- [who everyone else would embarrass](verse2)
-- [who had twenty boxes of staples](verse2)
-- [that only ate carne con chili](verse2)
-- [that everyone thought was a man](verse2)
-- [that wanted to go back to Eden](verse2)
+- whose favorite color was blue
+- whose vectors were not enough sparse
+- whose smiles would show too much joy
+- who never could go for a run
+- who everyone else would embarrass
+- who had twenty boxes of staples
+- that only ate carne con chili
+- that everyone thought was a man
+- that wanted to go back to Eden
 
 ## intent: tell_verse3
-- [for when songs it chirped](verse3)
-- [for he thought it was fun](verse3)
-- [cause he was well aware](verse3)
-- [cause she newer wore skirts](verse3)
-- [as the city was locked](verse3)
-- [as she thought it was fair](verse3)
+- for when songs it chirped
+- for he thought it was fun
+- cause he was well aware
+- cause she newer wore skirts
+- as the city was locked
+- as she thought it was fair
 
 ## intent: tell_verse4
-- [it wasn't too skilled](verse4)
-- [to dress as a nun](verse4)
-- [of how people would stare](verse4)
-- [but a tie and a shirt](verse4)
-- [and food he had stocked](verse4)
-- [to steal food from a fair](verse4)
+- it wasn't too skilled
+- to dress as a nun
+- of how people would stare
+- but a tie and a shirt
+- and food he had stocked
+- to steal food from a fair

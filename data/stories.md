@@ -80,10 +80,14 @@
 ## central verses to end
   - form{"name": null}
 * tell_verse2
+  - action_add_verse
   - utter_prompt_verse3
 * tell_verse3
+  - action_add_verse
   - action_suggest_rhymes
 * tell_verse4
+  - action_add_verse
+  - action_set_verses
   - utter_complete
   - utter_whole_limerick
   - utter_was_it_good
