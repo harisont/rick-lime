@@ -18,7 +18,9 @@ def format_rhymes(rhymes_list):
     '''
     Formats a list of words as a string of comma-separated items.
     '''
-    return ", ".join(rhymes_list) # TODO: handle empty list
+    if rhymes_list:
+        return ", ".join(rhymes_list)
+    return "(sorry, I can't think of any rhyme!)"
 
 class WwwForm(FormAction):
 
