@@ -18,7 +18,6 @@
   - utter_intro
 * ask_example
   - utter_example
-  - utter_was_it_good <!--provisory, just for testing-->
 
 ## start writing basic
 * accept_challenge
@@ -63,6 +62,9 @@
 
 ## www_form path
   - www_form
+  - slot{"who": "bird"}
+  - slot{"where": "Paris"}
+  - slot{"how": "hoarse"}
   - form{"name": "www_form"}
   - form{"name": null}
 
@@ -73,7 +75,10 @@
 * tell_verse3
   - action_suggest_rhymes
 * tell_verse4
+  - utter_complete
   - utter_whole_limerick
+  - utter_was_it_good
+
 
 ## good
   - utter_was_it_good

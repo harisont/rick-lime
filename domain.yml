@@ -56,7 +56,7 @@ responses:
   utter_goodbye:
   - text: |
             Well then, goodbye, I'll now disappear
-            but when you need me I'm always here
+            but when you need me I'm always here!
 
   utter_introduce_rick:
   - text: |
@@ -150,20 +150,24 @@ responses:
 
   utter_prompt_verse4:
   - text: |
+
             With one of the nice rhymes above
             Or ending with one of your own
             One last verse to you I request:
             don't worry, I'll take care of the rest!
 
+  utter_complete:
+  - text: |
+           I need no more information:
+           Get ready to read our creation!
+
   utter_whole_limerick:
   - text: |
-            I need no more information:
-            Get ready to read our creation!
-              There was a {how} {who} of {where}
-              {verse2}
-              {verse3}
-              {verse4}.
-              That {how} {who} of {where}!
+            There was a {how} {who} of {where}
+            {verse2}
+            {verse3}
+            {verse4}.
+            That {how} {who} of {where}!
 
 session_config:
   session_expiration_time: 60

@@ -143,7 +143,7 @@
 - [that wanted to go back to Eden](verse2)
 
 ## intent: tell_verse3
-- [for when songs he trilled](verse3)
+- [for when songs he chirped](verse3)
 
 ## intent: tell_verse4
-- [he was not too skilled](verse4)
+- [he wasn't too skilled](verse4)
