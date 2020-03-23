@@ -13,12 +13,18 @@ slots:
     type: text
   verse2:
     type: text
+  verse3:
+    type: text
+  verse4:
+    type: text
 
 entities:
   - who
   - where
   - how
   - verse2
+  - verse3
+  - verse4
 
 intents:
   - greet
@@ -36,7 +42,10 @@ intents:
   - inform_who
   - inform_where
   - inform_how
-  - tell_second_verse
+  - tell_verse2
+  - tell_verse3:
+      triggers: action_suggest_rhymes
+  - tell_verse4
 
 responses:
   utter_greet:
@@ -131,6 +140,30 @@ responses:
             Writing the second verse is your chore.
             To rhyme with {where} don't you forget!
             And if in trouble, read what I suggest:
+
+  utter_prompt_verse3:
+  - text: |
+            To the short middle verses we've come:
+            write down the first one and I'll tell you some
+            rhymes you could use to make the second fun
+            so that you're able to choose the best one
+
+  utter_prompt_verse4:
+  - text: |
+            With one of the nice rhymes above
+            Or ending with one of your own
+            One last verse to you I request:
+            don't worry, I'll take care of the rest!
+
+  utter_whole_limerick:
+  - text: |
+            I need no more information:
+            Get ready to read our creation!
+              There was a {how} {who} of {where}
+              {verse2}
+              {verse3}
+              {verse4}.
+              That {how} {who} of {where}!
 
 session_config:
   session_expiration_time: 60

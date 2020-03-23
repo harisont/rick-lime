@@ -6,9 +6,19 @@ from rasa_sdk.forms import FormAction
 from rasa_sdk.executor import CollectingDispatcher
 
 def get_rhymes(word):
+    '''
+    Given a word, it queries the a rhymes database to get a list of 5
+    words with similar endings.
+    '''
     api = datamuse.Datamuse()
     response = api.words(rel_rhy=word, max=5)
     return list(map(lambda dict: dict["word"], response))
+
+def format_rhymes(rhymes_list):
+    '''
+    Formats a list of words as a string of comma-separated items.
+    '''
+    return ", ".join(rhymes_list) # TODO: handle empty list
 
 class WwwForm(FormAction):
 
@@ -30,5 +40,19 @@ class WwwForm(FormAction):
                domain: Dict[Text, Any]) -> List[Dict]:
         dispatcher.utter_message(template="utter_prompt_verse2")
         rhyme_with = tracker.current_slot_values()["where"]
-        dispatcher.utter_message(text=", ".join(get_rhymes(rhyme_with))) # TODO: handle empty list
+        dispatcher.utter_message(text=format_rhymes(get_rhymes(rhyme_with)))
+        return []
+
+class ActionSuggestRhymes(Action):
+
+    def name(self) -> Text:
+        return "action_suggest_rhymes"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        rhyme_with = tracker.current_slot_values()["verse3"].split()[-1]
+        dispatcher.utter_message(text=format_rhymes(get_rhymes(rhyme_with)))
+        dispatcher.utter_message(template="utter_prompt_verse4")
         return []

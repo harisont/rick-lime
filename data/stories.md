@@ -66,9 +66,14 @@
   - form{"name": "www_form"}
   - form{"name": null}
 
-## second verse path
+## central verses to end
   - form{"name": null}
-* tell_second_verse
+* tell_verse2
+  - utter_prompt_verse3
+* tell_verse3
+  - action_suggest_rhymes
+* tell_verse4
+  - utter_whole_limerick
 
 ## good
   - utter_was_it_good

@@ -131,7 +131,7 @@
 - the character is [loud](how)
 - the subject is [short](how)
 
-## intent:tell_second_verse
+## intent:tell_verse2
 - [whose favorite color was blue](verse2)
 - [whose vectors were not enough sparse](verse2)
 - [whose smiles would show too much joy](verse2)
@@ -141,3 +141,9 @@
 - [that only ate carne con chili](verse2)
 - [that everyone thought was a man](verse2)
 - [that wanted to go back to Eden](verse2)
+
+## intent: tell_verse3
+- [for when songs he trilled](verse3)
+
+## intent: tell_verse4
+- [he was not too skilled](verse4)
