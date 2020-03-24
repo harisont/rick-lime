@@ -92,7 +92,6 @@
 - let's write a limerick about a [boring](how) [pastor](who)
 - can we write something about a [sleepy](how) [student](who)?
 - let's write about a [lady](who)
-- we could write about [Juliet](who)
 - about a [hoarse](how) [actor](who) of [Nice](where)
 
 ## intent:inform_who
