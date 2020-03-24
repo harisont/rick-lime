@@ -136,7 +136,7 @@
 - whose vectors were not enough sparse
 - whose smiles would show too much joy
 - who never could go for a run
-- who everyone else would embarrass
+- who every other bird would embarrass
 - who had twenty boxes of staples
 - that only ate carne con chili
 - that everyone thought was a man

@@ -73,6 +73,7 @@ class ActionAddVerse(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         verse = tracker.events[-1].get('text')
         central_verses.append(verse)
+        print(tracker.events)
         print(central_verses)
         return []
 
