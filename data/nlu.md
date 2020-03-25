@@ -97,6 +97,8 @@
 ## intent:inform_who
 - [scholar](who)
 - [horse](who)
+- [kitten](who)
+- [toddler](who)
 - the character is an [owl](who)
 - the protagonist's name is [Lars](who)
 - the main character is called [Emily](who)
@@ -104,6 +106,7 @@
 - it's an [acrobat](who)
 - it is a [bird](who)
 - she is a [girl](who)
+- she is a [woman](who)
 - he is an [skater](who)
 
 ## intent:inform_where
@@ -124,12 +127,22 @@
 - [childish](how)
 - [lovely](how)
 - [sad](how)
+- [mad](how)
+- [glad](how)
+- [sloppy](how)
 - he is [silly](how)
+- he is [annoying](how)
 - she is [dirty](how)
+- she is [caring](how)
 - it is [weird](how)
+- it is [stupid](how)
 - he's [nasty](how)
 - the character is [loud](how)
+- the character is [tired](how)
+- the character is [boring](how)
+- the subject is [noisy](how)
 - the subject is [short](how)
+- the subject is [tall](how)
 
 ## intent:tell_verse2
 - whose favorite color was blue
