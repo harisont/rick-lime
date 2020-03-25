@@ -101,5 +101,6 @@ class ActionReset(Action):
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        global central_verses
         central_verses = []
         return [AllSlotsReset()]
