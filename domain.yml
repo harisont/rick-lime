@@ -5,6 +5,7 @@ actions:
   - action_suggest_rhymes
   - action_add_verse
   - action_set_verses
+  - action_reset
 
 slots:
   who:
@@ -169,6 +170,11 @@ responses:
             {verse3}
             {verse4}.
             That {how} {who} of {where}!
+
+  utter_default:
+  - text: |
+            I didn't get it, could you repeat?
+            Try tell me something a bit more concrete.
 
 session_config:
   session_expiration_time: 60
