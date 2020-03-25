@@ -4,7 +4,7 @@ import datamuse
 from rasa_sdk import Tracker, Action
 from rasa_sdk.forms import FormAction
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, AllSlotsReset
 
 central_verses = []
 
@@ -91,3 +91,15 @@ class ActionSetVerses(Action):
         else:
             print("This should never happen. We rushed to conclusions before the user gave us all of the necessary information.")
             return []
+
+class ActionReset(Action):
+
+    def name(self) -> Text:
+        return "action_reset"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        central_verses = []
+        return [AllSlotsReset()]

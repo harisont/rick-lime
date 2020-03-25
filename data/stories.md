@@ -90,6 +90,7 @@
   - action_set_verses
   - utter_complete
   - utter_whole_limerick
+  - action_reset
   - utter_was_it_good
 
 
