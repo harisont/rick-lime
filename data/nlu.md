@@ -149,6 +149,7 @@
 - cause she newer wore skirts
 - as the city was locked
 - as she thought it was fair
+- for the things he saw
 
 ## intent: tell_verse4
 - it wasn't too skilled
@@ -157,3 +158,4 @@
 - but a tie and a shirt
 - and food he had stocked
 - to steal food from a fair
+- made him want to draw
